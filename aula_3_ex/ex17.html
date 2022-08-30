@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exemplo de HTML: tags para layout</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label for="nome_completo">Nome completo</label><br>
+            <input type="text" id="nome_completo" name="nome_completo"><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="telefone">Telefone</label><br>
+            <input type="text" id="telefone" name="telefone"><br>
+
+            <label for="carta">Carta de apresentação</label><br>
+            <textarea id="carta" name="carta"></textarea><br>
+
+            <label for="linkedin">Linkedin</label><br>
+            <input type="text" id="linkedin" name="linkedin"><br>
+
+            <label for="nivel_formacao">Qual seu nível de formação:</label>
+            <select id="nivel_formacao" name="nivel_formacao">
+              <option value="medio">Ensino médio</option>
+              <option value="superior">Superior</option>
+              <option value="pos_graduacao">Pós-graduação</option>
+            </select>
+
+            <p>
+                Qual sua preferência de trabalho?
+            </p>
+            <input type="radio" id="preferencia_trabalho_homeoffice" name="preferencia_trabalho" value="Home Office"> <label for="preferencia_trabalho_homeoffice">Home office</label><br>
+            <input type="radio" id="preferencia_trabalho_presencial" name="preferencia_trabalho" value="Presencial"> <label for="preferencia_trabalho_presencial">Presencial</label><br>
+            <br>
+            <p>
+               Quais tecnologias você domina?
+            </p>
+            <input type="checkbox" id="tec_html" name="tec_html" value="HTML"> <label for="tec_html">HTML</label><br>
+            <input type="checkbox" id="tec_css" name="tec_css" value="CSS"> <label for="tec_css">CSS</label><br>
+            <input type="checkbox" id="tec_js" name="tec_js" value="JavaScript"> <label for="tec_js">JavaScript</label><br>
+
+
+
+            <input type="submit" value="Enviar!">
+        </form>
+    </div>
+</body>
+
+</html>
