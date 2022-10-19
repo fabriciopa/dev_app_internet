@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Desenvolvimento de aplicações para a Interne
+    </title>
+</head>
+
+<body>
+
+    <!-- AQUI COMECA O CONTEUDO VISIVEL PRO USUARIO -->
+
+    <!-- AQUI FINALIZA O CONTEUDO VISIVEL PRO USUARIO -->
+
+    <script>
+        var curso = "Análise e devolvimento de sistemas";
+        curso = curso.replace("devolvimento", "desenvolvimento");
+        
+        var posicao1 = curso.search("sistemas");
+        var posicao2 = curso.search("sistemass");
+        
+        if (posicao1 >= 0){
+            alert("Achou o texto na posição: "+posicao1);
+        }else{
+            alert("Não achou o texto!");
+        }
+
+        if (posicao2 >= 0){
+            alert("Achou o texto na posição: "+posicao1);
+        }else{
+            alert("Não achou o texto!");
+        }
+
+    </script>
+</body>
+
+</html>

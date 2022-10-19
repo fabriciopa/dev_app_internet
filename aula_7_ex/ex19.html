@@ -6,15 +6,23 @@
     <title>
         Desenvolvimento de aplicações para a Interne
     </title>
-    <script src="ex1.js"></script>
 </head>
 
 <body>
 
     <!-- AQUI COMECA O CONTEUDO VISIVEL PRO USUARIO -->
-
+    <button id="btn1">Clica aqui!</button>
     <!-- AQUI FINALIZA O CONTEUDO VISIVEL PRO USUARIO -->
 
+    <script>
+        function mostraAlerta(){
+            alert("Olá mundo!");
+        }
+
+        var botao = document.querySelector("#btn1");
+        botao.onclick = mostraAlerta;
+
+    </script>
 </body>
 
 </html>
