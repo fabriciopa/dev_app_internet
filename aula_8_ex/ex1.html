@@ -21,19 +21,21 @@
     </form>
 
     <script>
-        document.querySelector("#calcular").onclick = function(){
-            var nota1 = parseFloat(document.querySelector("#nota1").value);
-            var nota2 = parseFloat(document.querySelector("#nota2").value);
-            var media = (nota1+nota2)/2;
-            
-            alert("Sua média foi: " + media)
+        document.querySelector("#calcular").onclick = function () {
+            if (confirm("Deseja efetuar o cálculo?")) {
+                var nota1 = parseFloat(document.querySelector("#nota1").value);
+                var nota2 = parseFloat(document.querySelector("#nota2").value);
+                var media = (nota1 + nota2) / 2;
 
-            if(media >= 7){
-                alert("Aprovado :D")
-            }else if(media < 4){
-                alert("Reprovado :(")
-            }else{
-                alert("Avaliação final :S")
+                alert("Sua média foi: " + media)
+
+                if (media >= 7) {
+                    alert("Aprovado :D")
+                } else if (media < 4) {
+                    alert("Reprovado :(")
+                } else {
+                    alert("Avaliação final :S")
+                }
             }
         }
     </script>
