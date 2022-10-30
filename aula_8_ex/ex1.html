@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="nota1">Digite a sua primeira nota: </label>
+            <input type="text" name="nota1" id="nota1">
+        </div>
+        <div>
+            <label for="nota1">Digite a sua segunda nota: </label>
+            <input type="text" name="nota2" id="nota2">
+        </div>
+        <div>
+            <button type="button" id="calcular">Calcular</button>
+        </div>
+    </form>
+
+    <script>
+        document.querySelector("#calcular").onclick = function(){
+            var nota1 = parseFloat(document.querySelector("#nota1").value);
+            var nota2 = parseFloat(document.querySelector("#nota2").value);
+            var media = (nota1+nota2)/2;
+            
+            alert("Sua média foi: " + media)
+
+            if(media >= 7){
+                alert("Aprovado :D")
+            }else if(media < 4){
+                alert("Reprovado :(")
+            }else{
+                alert("Avaliação final :S")
+            }
+        }
+    </script>
+</body>
+
+</html>
