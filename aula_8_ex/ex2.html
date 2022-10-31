@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="media">Digite a sua média: </label>
+            <input type="text" name="media" id="media">
+        </div>
+        <div>
+            <button type="button" id="calcular">Calcular</button>
+        </div>
+    </form>
+
+    <script>
+        document.querySelector("#calcular").onclick = function () {
+            if (confirm("Deseja efetuar o cálculo?")) {
+                var media = parseFloat(document.querySelector("#media").value);
+
+                if (media >= 7) {
+                    alert("Aprovado :D")
+                } else if (media < 4) {
+                    alert("Reprovado :(")
+                } else {
+                    var nota_final = 10 - media;
+                    alert("Avaliação final :S")
+                    alert("Você precisa de: " + nota_final);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
