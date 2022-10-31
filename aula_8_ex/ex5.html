@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script>
+        var media = parseFloat(prompt("Digite a média: "));
+
+        if (media >= 7) {
+            alert("Aprovado :D")
+        } else if (media < 4) {
+            alert("Reprovado :(")
+        } else {
+            var nota_final = 10 - media;
+            alert("Avaliação final :S")
+            alert("Você precisa de: " + nota_final);
+        }
+    </script>
+</body>
+
+</html>
