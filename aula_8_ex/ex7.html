@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="nome">Digite seu nome completo: </label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="email">Digite seu email: </label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <button type="button" id="enviar">Enviar</button>
+        </div>
+    </form>
+
+    <script>
+        document.querySelector("#enviar").onclick = function () {
+            if (confirm("Deseja enviar?")) {
+                var nome = document.querySelector("#nome").value;
+                var email = document.querySelector("#email").value;
+
+                if(nome.length == 0 || email.length == 0){
+                    alert("Você precisa preencher os dois campos!");
+                    return false;
+                }
+
+                var nomes = nome.split(" ");
+                if(nomes.length <= 1){
+                    alert("Você precisa digitar seu nome completo!");
+                    return false;
+                }
+                
+                if(!email.includes("@")){
+                    alert("Você precisa digitar um email válido!");
+                    return false;
+                }
+
+                if(!email.includes(".")){
+                    alert("Você precisa digitar um email válido!");
+                    return false;
+                }
+
+                alert("Mensagem enviada!");
+            }
+        }
+    </script>
+</body>
+
+</html>
