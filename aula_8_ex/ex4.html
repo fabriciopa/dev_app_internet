@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var nota1 = prompt("Digite a primeira nota.");
+        nota1 = parseFloat(nota1);
+        var nota2 = parseFloat(prompt("Digite a segunda nota"));
+        var media = (nota1 + nota2) / 2;
+
+        alert("Sua média foi: " + media)
+
+        if (media >= 7) {
+            alert("Aprovado :D")
+        } else if (media < 4) {
+            alert("Reprovado :(")
+        } else {
+            alert("Avaliação final :S")
+        }
+    </script>
+</body>
+
+</html>
