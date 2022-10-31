@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var numero1 = parseFloat(prompt("Digite o primeiro número"));
+        var numero2 = parseFloat(prompt("Digite o segundo número"));
+        var operacao = prompt("Digite soma, substracao, multiplicacao ou divisao")
+
+        if (operacao == "soma") {
+            var resultado = numero1 + numero2;
+            alert("Resultado da soma: " + resultado);
+        }
+        if (operacao == "subtracao") {
+            var resultado = numero1 - numero2;
+            alert("Resultado da subtração: " + resultado);
+        }
+        if (operacao == "multiplicacao") {
+            var resultado = numero1 * numero2;
+            alert("Resultado da multiplicação: " + resultado);
+        }
+        if (operacao == "divisao") {
+            var resultado = numero1 / numero2;
+            alert("Resultado da divisão: " + resultado);
+        }
+    </script>
+</body>
+
+</html>
