@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="numero1">Digite o primeiro número: </label>
+            <input type="text" name="numero1" id="numero1">
+        </div>
+        <div>
+            <label for="numero2">Digite o segundo número: </label>
+            <input type="text" name="numero2" id="numero2">
+        </div>
+        <div>
+            <label for="operacao">Seleciona a operação: </label>
+            <input type="radio" name="operacao" value="soma"> Soma
+            <input type="radio" name="operacao" value="subtracao"> Subtração
+            <input type="radio" name="operacao" value="multiplicacao"> Multiplicação
+            <input type="radio" name="operacao" value="divisao"> Divisão
+        </div>
+        <div>
+            <button type="button" id="calcular">Calcular</button>
+        </div>
+    </form>
+
+    <script>
+        document.querySelector("#calcular").onclick = function () {
+            if (confirm("Deseja efetuar o cálculo?")) {
+                var num1 = parseFloat(document.querySelector("#numero1").value);
+                var num2 = parseFloat(document.querySelector("#numero2").value);
+                var operacao = document.querySelector('input[name="operacao"]:checked').value;
+
+                if (operacao == "soma") {
+                    resultado = num1 + num2;
+                } else if (operacao == "subtracao") {
+                    resultado = num1 - num2;
+                } else if (operacao == "multiplicacao") {
+                    resultado = num1 * num2;
+                } else {
+                    resultado = num1 / num2;
+                }
+
+                alert("O resultado é: " + resultado);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
